@@ -6,34 +6,41 @@
 }
 body{
     width: 100%;
+    background-image: url(https://vosartewp.files.wordpress.com/2023/03/pers19.jpg);
+    background-repeat: repeat round;
 }
 header{ 
-    background-color:#927682; 
+    background-color: #927682; 
+    opacity: 80%;
     width: 100%;
-    height: 150px;
     justify-content: space-around;
     align-items: center;
 }
 main{ 
    background-color: #96c9c9;
+   opacity: 80%;
 }
 article{
-    background-color: darkgreen;
+    background-color: darkgreen; 
+    opacity: 80%;
 }
 footer {
-    background-color: cornflowerblue;*/
+    background-color: cornflowerblue;
+    opacity: 80%;
 } 
 .personajes{ 
     background-color: blue;
+    opacity: 80%;
 }
 .ver-serie{
-    background-color: brown;
+    background-color: brown; 
+    opacity: 80%;
     margin: 10px;
     padding: 20px;
 }
 .var{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: x-large;
+    font-size: 38px;
     text-align: left;
     display: inline-flex;
     padding: 10px;
@@ -94,6 +101,7 @@ article div img {
     display: flex;
   }
   .txt{
+    font-family:sans-serif, Arial, roboto;
     clear:left;
     display: flex;
     flex-direction: column;
@@ -105,6 +113,9 @@ article div img {
     text-decoration: none;
     list-style: none;
       }
+      .texto{
+        font-size: x-large;
+      }
   nav ul {
     gap: 10px;
     justify-content: start;
@@ -114,3 +125,26 @@ article div img {
     list-style: none;
     text-decoration: none;
 }
+@media only screen and (min-width: 100px) and (max-width: 800px) {
+   .imagen1{
+    width: 200px;
+    
+    
+
+   }
+   .header{
+    flex-flow: column;
+   }
+   
+   .sinopsis{
+    padding: 3%;
+    display: flex;
+    flex-flow: column;
+   }
+   .ver-serie{
+    display: flex;
+    flex-flow: column;
+  }
+}
+  
+  
