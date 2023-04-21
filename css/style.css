@@ -1,43 +1,117 @@
+/* CSS */
 *{
     margin: 0;
     padding: 0;
     border: 0;
     box-sizing: border-box;
 }
+/* body */
 body{
     width: 100%;
-    background-image: url(https://vosartewp.files.wordpress.com/2023/03/pers19.jpg);
+    background-image: url(https://vosartewp.files.wordpress.com/2023/04/fondorym2.jpg);
     background-repeat: repeat round;
-}
+    background-color: green;
+    }
+/* header*/
 header{ 
-    background-color: #927682; 
     opacity: 80%;
     width: 100%;
     justify-content: space-around;
     align-items: center;
+    margin: 20px;
+    border-radius: 4%;
+    border: 5px;
+    border-color: white;
+    padding: 3%;
+    clear:left;
+    display: flex;
+    text-align: center;
 }
+/* main*/
 main{ 
-   background-color: #96c9c9;
+   width: 90%;
    opacity: 80%;
+   margin: 20px;
+   border-radius: 4%;
+   border: solid 5px white;
 }
 article{
-    background-color: darkgreen; 
-    opacity: 80%;
+  opacity: 80%;
 }
+/* footer */
 footer {
-    background-color: cornflowerblue;
-    opacity: 80%;
+   width: 90%;
+   margin: 20px;
+   border-radius: 4%;
+   border: solid 5px white;}
+   
+nav ul li a {
+   background-color: wheat;
+   border-radius: 30%;
+   font: black;
+    }
+/* aplico js concatenado*/
+.contenedor{
+   width: 100%;
+   margin: 20px;
+   border-radius: 4%;
+   border-color: white;
+   border: 5px;
 } 
 .personajes{ 
-    background-color: blue;
     opacity: 80%;
 }
-.ver-serie{
-    background-color: brown; 
-    opacity: 80%;
-    margin: 10px;
+.contenedor-personajes{
+    width: 100%;
+    margin: 20px;
     padding: 20px;
+    border-radius: 4%;
+    border-color: white;
+    border: 5px;
 }
+.tarjeta{
+    width: 280px;
+    height: 360px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px 5px;
+    background-color: rgba(255, 255, 255, 0.444);
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tarjeta .character-info {
+    font-family:sans-serif, Arial, roboto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    }
+.tarjeta .character-image {
+        width: 80%;
+        border-radius: 50%;
+    }
+.nombre-personaje{
+    font-family:sans-serif, Arial, roboto;
+    font-size: 20px;
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction:row;
+}
+/* ver serie*/
+.ver-serie{
+    padding: 20px;
+    margin: 20px;
+   border-radius: 4%;
+   border-color: white;
+   border: 5px;
+   background-color: rgb(8, 155, 106);
+    clear:left;
+    display: flex;
+  }
+/* var*/
 .var{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 38px;
@@ -46,18 +120,18 @@ footer {
     padding: 10px;
     margin: 10px; 
 }
-.header{
-    padding: 3%;
-    clear:left;
-    display: flex;
-    text-align: center;
-}
+/* sinopsis*/
 .sinopsis{
     padding: 3%;
     clear:left;
     display: flex;
+    margin: 20px;
+   border-radius: 4%;
+   border-color: white;
+   border: 5px;
 }
 .alineacion{
+    background-color: rgb(8, 155, 106);
     margin: 10px;
     padding: 10px;
     font-size: 25px;
@@ -79,28 +153,14 @@ footer {
     width: 100%;
     }
 article div img {
-    border-radius: 20%;
+    border-radius: 4%;
     width: 90%;
     height: 90%;
     align-items: center;
     justify-content: space-between;
 }
-.caja1{
-    width: 200px; 
-    height: 200px;
-    border-color: black; 
-    border-radius: 10%;
-    border:2px; 
-    display: inline-flex;
-    margin: 50px 50px 50px 50px;
-    background-color: white;
-    justify-content: center;
-}
-.ver-serie{
-    clear:left;
-    display: flex;
-  }
   .txt{
+    background-color:  rgb(8, 155, 106);
     font-family:sans-serif, Arial, roboto;
     clear:left;
     display: flex;
@@ -113,8 +173,9 @@ article div img {
     text-decoration: none;
     list-style: none;
       }
-      .texto{
-        font-size: x-large;
+    .texto{
+     font-size: x-large;
+     background-color:  rgb(8, 155, 106);
       }
   nav ul {
     gap: 10px;
@@ -125,17 +186,27 @@ article div img {
     list-style: none;
     text-decoration: none;
 }
+ .imagen1{
+        width: 200px;
+    }
+ .imagen2{
+        width: 20px;
+    }
+ .mira{
+        background-color: wheat;
+        border-radius: 30%;
+        font: black;
+        height: 60px;
+        text-align: center;
+       }
+   
 @media only screen and (min-width: 100px) and (max-width: 800px) {
    .imagen1{
     width: 200px;
-    
-    
-
-   }
+  }
    .header{
     flex-flow: column;
    }
-   
    .sinopsis{
     padding: 3%;
     display: flex;
@@ -145,6 +216,5 @@ article div img {
     display: flex;
     flex-flow: column;
   }
+  .txt{font-size: 16px;}
 }
-  
-  
