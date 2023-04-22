@@ -199,6 +199,11 @@ article div img {
         height: 60px;
         text-align: center;
        }
+footer ul li a{
+    text-decoration: none;
+    list-style: none;
+    font: black;
+}
    
 @media only screen and (min-width: 100px) and (max-width: 800px) {
    .imagen1{
